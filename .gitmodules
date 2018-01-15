@@ -7,3 +7,7 @@
 [submodule "themes/forty"]
 	path = themes/forty
 	url = https://github.com/MarcusVirg/forty
+[submodule "public"]
+	path = public
+	url = git@github.com:utrescu/utrescu.github.io.git
+	branch = master
