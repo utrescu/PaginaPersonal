@@ -1,0 +1,41 @@
+baseURL = "https://blog.utrescu.cat/"
+languageCode = "ca-ES"
+title = "Utrescu"
+PygmentsCodeFences = true
+
+theme = "hyde"
+
+[related]
+
+    # Only include matches with rank >= threshold. This is a normalized rank between 0 and 100.
+    threshold = 80
+
+    includeNewer = false
+
+    # Will lower case keywords in both queries and in the indexes.
+    toLower = false
+
+[[related.indices]]
+    name  = "categories"
+    weight = 100
+
+[[related.indices]]
+    name  = "tags"
+    weight = 50
+
+
+
+[[menu.main]]
+    name = "Categories"
+    weight = -110
+    identifier = "Categories"
+    url = "/categories/"
+
+[params]
+    description = "One C developer ejected in a web based world"
+    # themeColor = "theme-base-08"
+    googleAnalytics="UA-74759613-1"
+
+[social]
+    github = 'utrescu'
+    twitter = 'utrescu'
