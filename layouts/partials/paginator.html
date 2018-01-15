@@ -1,0 +1,13 @@
+<nav class="pagination">
+    {{ if .Paginator.HasPrev }}
+    <a class="btn btn-default" href="{{ .Paginator.Prev.URL }}">
+        < Anterior
+    </a>
+    {{ end }}
+    <!-- {{ template "_internal/pagination.html" . }} -->
+    {{ if .Paginator.HasNext }}
+    <a class="btn btn-default" href="{{ .Paginator.Next.URL }}">
+        Següent >
+    </a>
+    {{ end }}
+</nav>

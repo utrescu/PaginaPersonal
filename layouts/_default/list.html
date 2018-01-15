@@ -1,0 +1,14 @@
+{{ define "main" -}}
+<ul class="posts">
+{{ range (.Paginator 10).Pages }}
+  <li>
+    <span>
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+        <time class="pull-right post-list">{{ .Date.Format "Mon, Jan 2, 2006" }}
+        </time>
+    </span>
+  </li>
+{{ end }}
+</ul>
+{{ partial "paginator.html" . }}
+{{ end }}
