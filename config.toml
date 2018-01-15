@@ -31,6 +31,13 @@ theme = "hyde"
     identifier = "Categories"
     url = "/categories/"
 
+[[menu.main]]
+    name = "Etiquetes"
+    weight = -110
+    identifier = "tags"
+    url = "/tags/"
+
+
 [params]
     description = "One C developer ejected in a web based world"
     # themeColor = "theme-base-08"
